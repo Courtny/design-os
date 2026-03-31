@@ -38,6 +38,20 @@ Each file should cover:
 
 ---
 
+## Current Files
+
+| File | Storybook Path | Category |
+|------|---------------|----------|
+| [`button.md`](button.md) | Actions > Button | Actions |
+| [`form-field.md`](form-field.md) | Forms > FormField | Forms |
+| [`modal.md`](modal.md) | Overlay > Modal | Overlay |
+| [`data-table.md`](data-table.md) | Data > DataTable | Data Display |
+| [`card.md`](card.md) | Layout > Card | Layout |
+| [`alert.md`](alert.md) | Feedback > Alert | Feedback |
+| [`empty-state.md`](empty-state.md) | Data > EmptyState | Data Display |
+
+---
+
 ## Getting Started
 
 Start with your 5–10 most-used components. Even a short file with 3 "do" bullets and a Storybook link is valuable. Grow it over time.
