@@ -70,7 +70,7 @@ Status badges, progress indicators, or form validation that uses color as the on
 Error is `#EF4444` on the settings page but `#DC2626` on the checkout page. Both are "red," but they're different reds. This makes the system feel unreliable, even if users can't articulate why.
 
 ### Decorative use of semantic colors
-Using semantic colors (red, green, amber) for decorative or branding purposes in charts, illustrations, or marketing sections. Even in non-UI contexts, these colors carry their learned meaning.
+Using semantic colors (red, green, amber) for decorative or branding purposes in charts, illustrations, or marketing sections. Even in non-UI contexts, these colors carry their learned meaning. For chart-specific craft (encoding vs decoration, data-ink), see [`tufte-principles.md`](tufte-principles.md) and `/tufte-viz`.
 
 ---
 

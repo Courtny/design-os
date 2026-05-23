@@ -71,6 +71,7 @@ The copilot checks here for concept and theory questions: "What is affordance?",
 
 - [`refactoring-ui-principles.md`](refactoring-ui-principles.md) — Condensed *Refactoring UI* reference: feature-first workflow, visual hierarchy, spacing systems, typography, component patterns
 - [`semantic-color.md`](semantic-color.md) — Semantic color: assigning consistent meaning to colors, brand vs. semantic vs. neutral layers, common anti-patterns, token adherence, WCAG 1.4.1 connection
+- [`tufte-principles.md`](tufte-principles.md) — Tufte (*VDQI*): graphical excellence and integrity, data-ink ratio, chartjunk, small multiples, data density, Tufte test for charts and dashboards
 
 ### Prioritization and Scope
 

@@ -166,6 +166,7 @@ Type `/` in Claude Code to see all commands.
 - `/color-review` - Review color usage for semantic consistency, token adherence, and accessibility. Grounded in your `principles.md` tokens and `foundations/semantic-color.md`.
 - `/content-review` - Review microcopy, labels, error messages, and content hierarchy against your writing style files and content rules.
 - `/handoff-check` - Pre-handoff completeness check. Verifies a UX spec has everything engineering needs to build without asking questions.
+- `/tufte-viz` - Ideate or critique charts and dashboards using Tufte principles. Grounded in `foundations/tufte-principles.md`.
 
 See [`ROADMAP.md`](ROADMAP.md) for planned additions.
 

@@ -25,7 +25,7 @@ The designer has organized their knowledge here. Always reference:
   - `figma.md` - Figma library files, team norms, link patterns
   - `principles.md` - Global UX and design principles
   - `component-ux/` - Per-component UX guidance (do/avoid/accessibility)
-- `context-library/foundations/README.md` — index for HCI laws, cognitive effects, Gestalt, and prioritization frameworks; open this first to find the right reference file
+- `context-library/foundations/README.md` — index for HCI laws, cognitive effects, Gestalt, data visualization (Tufte), and prioritization frameworks; open this first to find the right reference file
 - `context-library/methodology/` for design process (critiques, discovery, sprints, handoffs); for theory, see `foundations/` instead
 - `context-library/design-specs/` for completed or reference specs
 - `context-library/example-specs/` — reference specs that show the expected format, depth, and voice for this team; check here when running `/design-spec-draft` or calibrating output quality
@@ -166,6 +166,11 @@ When creating any document (briefs, specs, critique notes, decisions):
 - "Check the error messages in this flow" → `/content-review`
 - "Audit the color tokens in this screen" → `/color-review`
 
+**Data Visualization** → Tufte skill + foundations
+- "Is this chart misleading?" or "lie factor" / truncated axis → `/tufte-viz`
+- "Reduce chartjunk" or improve data-ink on a dashboard → `/tufte-viz`
+- "How should I visualize this comparison?" → `/tufte-viz` (ideation) + `context-library/foundations/tufte-principles.md`
+
 ### Adding New MCPs
 
 ```
@@ -198,6 +203,7 @@ All skills live in `.claude/skills/<name>/SKILL.md`. Available slash commands:
 - `/color-review` - Review color usage for semantic consistency, token adherence, and accessibility
 - `/content-review` - Review microcopy, labels, error messages, and content hierarchy
 - `/handoff-check` - Pre-handoff completeness check on a UX spec before engineering picks it up
+- `/tufte-viz` - Ideate or critique charts and dashboards using Tufte principles (integrity, data-ink, chartjunk, density)
 
 **How skills work together:**
 Every skill checks your workspace context first: product context, design system reference, research, past decisions. They're wired to reference `component-ux/`, `principles.md`, and research in every output so work is grounded in your actual system.
