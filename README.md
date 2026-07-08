@@ -77,7 +77,7 @@ design-os/
 ├── ROADMAP.md                        # Planned additions
 │
 ├── .claude/                          # Claude Code configuration
-│   └── skills/                       # Slash commands (13 skills)
+│   └── skills/                       # Slash commands (15 skills)
 │       ├── connect-mcps/             # Connect Figma, Storybook, and other tools
 │       ├── ux-brief/                 # Create design briefs
 │       ├── critique-prep/            # Prepare for design critiques
@@ -90,7 +90,13 @@ design-os/
 │       ├── figma-critique/           # Critique a Figma file with optional commenting
 │       ├── color-review/             # Semantic color and token review
 │       ├── content-review/           # Microcopy and content hierarchy review
-│       └── handoff-check/            # Pre-handoff spec completeness check
+│       ├── handoff-check/            # Pre-handoff spec completeness check
+│       ├── tufte-viz/                # Charts and dashboards (Tufte)
+│       └── storytelling/             # Narratives via Storyteller Tactics
+│
+├── .github/                          # GitHub Actions
+│   └── workflows/
+│       └── release-packages.yml      # Zip/tar assets on published releases
 │
 ├── context-library/                  # Your design knowledge base
 │   ├── product-context-template.md   # Product, users, and design constraints
@@ -155,6 +161,7 @@ Type `/` in Claude Code to see all commands.
 - `/ux-brief` - Create a design brief from a problem statement or PRD
 - `/critique-prep` - Build a critique agenda with feedback prompts
 - `/design-spec-draft` - Draft a UX spec with flows, states, and edge cases
+- `/prototype` - Generate a working prototype using design system components and tokens
 - `/research-synthesis` - Turn usability sessions or research into insights
 - `/accessibility-review` - WCAG and heuristic review tied to your principles
 - `/meeting-notes` - Structure critique and design sync notes into action items
