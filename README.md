@@ -1,6 +1,6 @@
 # Design Operating System
 
-**v1.0.0** | [Changelog](CHANGELOG.md) | [Roadmap](ROADMAP.md) | [Contributing](CONTRIBUTING.md) | [License](LICENSE)
+**v1.1.0** | [Changelog](CHANGELOG.md) | [Roadmap](ROADMAP.md) | [Contributing](CONTRIBUTING.md) | [License](LICENSE)
 
 Your AI-powered copilot for product design. Built for Claude Code and Cursor.
 

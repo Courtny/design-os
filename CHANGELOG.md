@@ -4,6 +4,30 @@ All notable changes to Design OS are documented here.
 
 ---
 
+## [1.1.0] — 2026-07-08
+
+First published GitHub Release (zip and tar.gz packages attach automatically).
+
+### Added
+
+**Skills:**
+- `/tufte-viz` — Ideate or critique charts and dashboards using Tufte principles
+- `/storytelling` — Build or critique narratives using Storyteller Tactics
+
+**Foundations:**
+- `context-library/foundations/tufte-principles.md` — Condensed Tufte reference for graphical integrity, data-ink, and density
+- `context-library/foundations/storyteller-tactics/` — Full Pip Decks Storyteller Tactics card corpus with index, recipes, and Story Building System routing
+
+**Release packaging:**
+- `.github/workflows/release-packages.yml` — Builds `design-os-<version>.zip` and `.tar.gz` when a GitHub Release is published
+- Release cutting docs in `CONTRIBUTING.md`
+
+### Changed
+
+- README skill inventory synced to **15 skills**, including directory tree entries for `/tufte-viz`, `/storytelling`, and the release workflow
+
+---
+
 ## [1.0.0] — 2026-03-31
 
 ### Initial Release
