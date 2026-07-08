@@ -102,7 +102,8 @@ design-os/
 │   │   ├── principles.md             # Global UX and design principles
 │   │   └── component-ux/             # Per-component UX guidance
 │   ├── foundations/                   # HCI concepts, visual craft refs, prioritization frameworks
-│   │   └── README.md                 # Topic index (37 files) — start here
+│   │   ├── README.md                 # Topic index — start here
+│   │   └── storyteller-tactics/      # Narrative craft card deck (Pip Decks)
 │   ├── methodology/                  # Design process docs
 │   │   ├── critique-norms.md         # How to run design critiques
 │   │   └── handoff-checklist.md      # What "ready for engineering" means
@@ -167,6 +168,7 @@ Type `/` in Claude Code to see all commands.
 - `/content-review` - Review microcopy, labels, error messages, and content hierarchy against your writing style files and content rules.
 - `/handoff-check` - Pre-handoff completeness check. Verifies a UX spec has everything engineering needs to build without asking questions.
 - `/tufte-viz` - Ideate or critique charts and dashboards using Tufte principles. Grounded in `foundations/tufte-principles.md`.
+- `/storytelling` - Build or critique narratives using Storyteller Tactics. Grounded in `foundations/storyteller-tactics/`.
 
 See [`ROADMAP.md`](ROADMAP.md) for planned additions.
 
@@ -180,6 +182,7 @@ See [`ROADMAP.md`](ROADMAP.md) for planned additions.
 | Component UX guidance | `context-library/design-system/component-ux/` |
 | Example specs (format + voice) | `context-library/example-specs/` |
 | HCI laws and frameworks index | `context-library/foundations/README.md` |
+| Storyteller Tactics (narratives) | `context-library/foundations/storyteller-tactics/` |
 
 ## Conflict Resolution
 

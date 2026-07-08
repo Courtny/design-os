@@ -4,7 +4,7 @@ This folder holds **durable reference knowledge** that informs design judgment: 
 
 These are not team process docs (see `../methodology/`) and they're not your team's committed rules (see `../design-system/principles.md`). They're the "why behind the how" — concepts you reach for when making decisions, writing specs, or grounding a critique.
 
-The copilot checks here for concept and theory questions: "What is affordance?", "Why does aesthetics affect perceived usability?", "How should we prioritize this sprint?"
+The copilot checks here for concept and theory questions: "What is affordance?", "Why does aesthetics affect perceived usability?", "How should we prioritize this sprint?", "Which story structure fits this pitch?"
 
 ---
 
@@ -12,6 +12,7 @@ The copilot checks here for concept and theory questions: "What is affordance?",
 
 - **Interaction and perception:** HCI concepts, cognitive effects, and psychological principles that explain how users read and act on UI
 - **Visual craft:** Condensed references from established design books or frameworks your team uses
+- **Narrative craft:** Story structures and tactics for pitches, presentations, and idea selling
 - **Prioritization and scope:** Decision lenses for choosing what to build, refine, or cut
 
 ---
@@ -72,6 +73,10 @@ The copilot checks here for concept and theory questions: "What is affordance?",
 - [`refactoring-ui-principles.md`](refactoring-ui-principles.md) — Condensed *Refactoring UI* reference: feature-first workflow, visual hierarchy, spacing systems, typography, component patterns
 - [`semantic-color.md`](semantic-color.md) — Semantic color: assigning consistent meaning to colors, brand vs. semantic vs. neutral layers, common anti-patterns, token adherence, WCAG 1.4.1 connection
 - [`tufte-principles.md`](tufte-principles.md) — Tufte (*VDQI*): graphical excellence and integrity, data-ink ratio, chartjunk, small multiples, data density, Tufte test for charts and dashboards
+
+### Narrative and Presentation
+
+- [`storyteller-tactics/README.md`](storyteller-tactics/README.md) — Storyteller Tactics (Pip Decks): full card deck for building and critiquing narratives. Story Building System, recipes, Desert Island seven. Used by `/storytelling`.
 
 ### Prioritization and Scope
 
