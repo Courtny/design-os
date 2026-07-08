@@ -184,6 +184,10 @@ See [`ROADMAP.md`](ROADMAP.md) for planned additions.
 | HCI laws and frameworks index | `context-library/foundations/README.md` |
 | Storyteller Tactics (narratives) | `context-library/foundations/storyteller-tactics/` |
 
+## Releases
+
+Publishing a GitHub Release cuts download packages automatically (`design-os-<version>.zip` and `.tar.gz`). See [Cutting a Release](CONTRIBUTING.md#cutting-a-release).
+
 ## Conflict Resolution
 
 **Storybook = production truth.** If Storybook and Figma differ, Storybook wins for implementation.

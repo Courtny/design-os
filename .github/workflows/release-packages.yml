@@ -1,0 +1,74 @@
+name: Release packages
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build zip and tar.gz
+        env:
+          TAG: ${{ github.event.release.tag_name }}
+        run: |
+          set -euo pipefail
+
+          # Normalize version for filenames (v1.2.0 -> 1.2.0)
+          VERSION="${TAG#v}"
+          NAME="design-os-${VERSION}"
+          STAGING="$(mktemp -d)/${NAME}"
+          OUT_DIR="${GITHUB_WORKSPACE}/dist"
+          mkdir -p "${STAGING}" "${OUT_DIR}"
+
+          # Curated installable bundle: toolkit only, not personal working files
+          rsync -a \
+            --exclude '.git/' \
+            --exclude '.github/' \
+            --exclude 'dist/' \
+            --exclude 'outputs/' \
+            --exclude '.env' \
+            --exclude '.env.*' \
+            --exclude '.DS_Store' \
+            --exclude 'node_modules/' \
+            --exclude '__pycache__/' \
+            --exclude '.claude/settings.local.json' \
+            ./ "${STAGING}/"
+
+          # Empty outputs/ so the expected folder layout still exists after unzip
+          mkdir -p \
+            "${STAGING}/outputs/briefs" \
+            "${STAGING}/outputs/design-specs" \
+            "${STAGING}/outputs/prototypes" \
+            "${STAGING}/outputs/critique-notes" \
+            "${STAGING}/outputs/research-synthesis" \
+            "${STAGING}/outputs/meeting-notes" \
+            "${STAGING}/outputs/decisions" \
+            "${STAGING}/outputs/mcp-integration-logs"
+          touch "${STAGING}/outputs/.gitkeep"
+
+          (
+            cd "$(dirname "${STAGING}")"
+            zip -r "${OUT_DIR}/${NAME}.zip" "${NAME}"
+            tar -czf "${OUT_DIR}/${NAME}.tar.gz" "${NAME}"
+          )
+
+          ls -lh "${OUT_DIR}"
+          echo "NAME=${NAME}" >> "${GITHUB_ENV}"
+
+      - name: Upload assets to release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAG: ${{ github.event.release.tag_name }}
+        run: |
+          set -euo pipefail
+          gh release upload "${TAG}" \
+            "dist/${NAME}.zip" \
+            "dist/${NAME}.tar.gz" \
+            --clobber

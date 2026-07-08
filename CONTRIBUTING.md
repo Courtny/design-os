@@ -69,6 +69,25 @@ If you're adding a component UX file:
 3. Fill out all sections: when to use, do/avoid, states, accessibility, pairings, common mistakes
 4. Add it to `context-library/design-system/component-ux/`
 
+## Cutting a Release
+
+Publishing a GitHub Release automatically builds install packages via [`.github/workflows/release-packages.yml`](.github/workflows/release-packages.yml).
+
+1. Update [`CHANGELOG.md`](CHANGELOG.md) with the version notes.
+2. Create and push a tag matching the version, for example `v1.1.0`:
+   ```bash
+   git tag v1.1.0
+   git push origin v1.1.0
+   ```
+3. Create a GitHub Release for that tag (UI, or `gh release create v1.1.0 --generate-notes`).
+4. The workflow attaches:
+   - `design-os-<version>.zip`
+   - `design-os-<version>.tar.gz`
+
+Packages include the toolkit (skills, templates, context-library scaffolds, setup docs). They exclude `.git`, the workflow folder, and personal files under `outputs/` (empty `outputs/` folders remain so the layout unpacks cleanly).
+
+Draft releases do not trigger packaging. Publish the release to cut packages.
+
 ## Code of Conduct
 
 Be respectful, constructive, and specific. Design is subjective, but UX guidance should be grounded in research, heuristics, or team experience, not just preference.
